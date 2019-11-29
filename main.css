@@ -1,0 +1,168 @@
+/* 
+font-family: 'Alatsi', sans-serif; - норм шрифт под инглиш вордс
+font-family: 'Open Sans Condensed', sans-serif; Светлый, легкий шрифт на русиче (под вторичную инфу)
+font-family: 'Bebas Neue', cursive; - под заголовки на инглише 
+font-family: 'Vibes', cursive; - пиздатый шрифт на инглише (полурукопись)
+font-family: 'Fira Sans Extra Condensed', sans-serif; - основной шрифт
+font-family: 'Amatic SC', cursive;
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+	width: 100%;
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+		.preloader {
+			position: fixed;
+			background-color: black;
+			z-index: 3;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+			transition: 1s all;
+		}
+
+		.loader {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			border: 2px solid black;
+			animation: 2s load infinite linear;
+		}
+
+		.loader-2 {
+			width: 55px;
+			height: 55px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			border: 2px solid black;
+			animation: 1s load-2 infinite linear;
+		}
+
+		@keyframes load-2 {
+			from {
+				border-bottom: 2px solid white;
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			to {
+				border-bottom: 2px solid white;
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+
+		@keyframes load {
+			from {
+				border-top: 2px solid white;
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			to {
+				border-top: 2px solid white;
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+
+		.unvisible {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+.scroll-div {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+	width: 20px;
+	height: 60px;
+	justify-content: space-around;
+}
+
+.scroll-ball {
+	width: 10px;
+	height: 10px;
+	opacity: 0;
+	border-radius: 50%;
+	background-color: white;
+	animation: 1.4s scroll infinite linear;
+	border: 1px solid white;
+}
+
+.scroll-ball-1 {
+	animation-delay: 0;
+}
+.scroll-ball-2 {
+	animation-delay: 333ms;
+}
+.scroll-ball-3 {
+	animation-delay: 666ms;
+}
+
+@keyframes scroll {
+	from {
+		background-color: white;
+	}
+	50% {
+		background-color: black;
+		opacity: 0.8;
+		border: 1px solid white;
+	}
+	to {
+		background-color: white;
+	}
+}
+
+header {
+	height: 100vh;
+	color: black;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	background-image: url('img/background.png');
+}
+
+.quote-block {
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	margin-top: 50vh;
+}
+
+article.quote {
+	font-family: 'Vibes', cursive;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 0.8;
+	color: white;
+}
+
+article.quote-add {
+	font-family: 'Amatic SC', cursive;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 0px 5px black;
+	color: white;
+}
+
+.logo {
+	font-family: 'Bebas Neue', cursive;
+	margin-top: 45vh;
+	font-size: 100px;
+	color: white;
+}

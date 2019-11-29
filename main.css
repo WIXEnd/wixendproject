@@ -165,3 +165,13 @@ body{
         background-color: white;
     }
 }
+.second{
+    height: 100vh;
+    background-image: url("img/4k-ultra-hd-background-trees-forest-road-dirt-road-winding-d.png");
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    word-spacing: 10px;
+    line-height: 45px;
+
+}

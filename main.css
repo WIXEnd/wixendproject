@@ -11,7 +11,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Fjalla One', sans-serif;
-
+    background-color: black;
 }
 *{
     transition: all .2s;
@@ -39,14 +39,6 @@ body{
     font-size: 40px;
 
 }
-
-.t-1{
-    font-size: 26px;
-    text-shadow: 1px 1px 2px black, 0 0 1em black;
-
-}
-
-
 
 .preloader {
     position: fixed;
@@ -174,4 +166,10 @@ body{
     word-spacing: 10px;
     line-height: 45px;
 
+}
+
+.quote {
+    font-family: 'Vibes', cursive;
+    font-size: 26px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
 }
